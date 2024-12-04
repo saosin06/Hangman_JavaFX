@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171"
+      fx:controller="HangmanGameController" spacing="10" alignment="CENTER" style="-fx-padding: 20px;">
+
+    <!-- Label for displaying the word -->
+    <Label fx:id="wordLabel" text="Word: _ _ _ _ _" style="-fx-font-size: 16px;" />
+
+    <!-- Label for remaining attempts -->
+    <Label fx:id="attemptsLabel" text="Attempts Remaining: 6" style="-fx-font-size: 14px;" />
+
+    <!-- TextField for user input -->
+    <TextField fx:id="guessInput" promptText="Enter a letter" maxWidth="200" />
+
+    <!-- Button for submitting guesses -->
+    <Button fx:id="guessButton" text="Guess" style="-fx-font-size: 14px;" />
+
+    <!-- Label for displaying messages -->
+    <Label fx:id="messageLabel" text="" style="-fx-font-size: 12px; -fx-text-fill: red;" />
+
+</VBox>
